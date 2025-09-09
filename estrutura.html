@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estrutura • Clube de Campo de Tatuí</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/estrutura.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="estrutura-page">
+
+<header class="site-header" role="banner">
+  <div class="container">
+    <!-- Logo -->
+    <a href="index.html" class="logo-wrap" title="Clube de Campo de Tatuí">
+      <img src="img/logo_clube_campo.png" alt="Logo Clube" class="logo">
+      <img src="img/clube_clicavel.png" alt="Clube de Campo de Tatuí" class="logo-text">
+    </a>
+
+    <!-- Botão hamburguer (aparece só no mobile) -->
+    <button class="menu-toggle" aria-label="Abrir menu">☰</button>
+
+    <!-- Navegação principal -->
+    <nav class="primary-nav" aria-label="Navegação principal">
+      <ul>
+        <li><a href="index.html" class="is-active">Início</a></li>
+        <li><a href="estrutura.html">Estrutura</a></li>
+        <li><a href="institucional.html">Institucional</a></li>
+        <li><a id="link-contato" href="index.html#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <script>
+    (function () {
+      try {
+        if (location.hash === '#contato') {
+          var a = document.getElementById('link-contato');
+          if (a) a.classList.add('is-active');
+        }
+      } catch (_) {}
+    })();
+  </script>
+
+  <main class="estrutura-page">
+
+    <!-- INTRO -->
+    <section class="section bg-f1 intro">
+      <div class="container-narrow">
+        <header class="intro-head">
+          <h1 class="h-section">Estrutura</h1>
+          <p>Ambientes de esporte, lazer e convívio — conheça cada espaço do clube.</p>
+        </header>
+      </div>
+    </section>
+
+    <!-- DECK -->
+    <section class="section bg-f1">
+      <div class="about">
+        <div class="about__text">
+          <h2 class="h-section">Deck</h2>
+          <p class="meta">Convívio</p>
+          <ul>
+            <li>Área ampla e arejada para confraternizações.</li>
+            <li>Integração com áreas externas do clube.</li>
+            <li>Disponível conforme programação interna.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel" data-autoplay="5000">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/deck1.png" alt="Deck do clube"></div>
+                <div class="carousel__slide"><img src="img/img3.png" alt="Deck - vista adicional"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SALÃO SOCIAL -->
+    <section class="section bg-f2 theme-dark">
+      <div class="about about--reverse">
+        <div class="about__text">
+          <h2 class="h-section">Salão Social</h2>
+          <p class="meta">Convívio</p>
+          <ul>
+            <li>Ambiente climatizado e versátil para eventos.</li>
+            <li>Estrutura de apoio para cerimônias e festas.</li>
+            <li>Agendamento mediante disponibilidade.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel" data-autoplay="5000">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/salaosocial.png" alt="Salão social - visão geral"></div>
+                <div class="carousel__slide"><img src="img/salaosocial2.png" alt="Salão social - iluminação"></div>
+                <div class="carousel__slide"><img src="img/img8.png" alt="Salão social - evento"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ACADEMIA -->
+    <section class="section bg-f1">
+      <div class="about">
+        <div class="about__text">
+          <h2 class="h-section">Academia</h2>
+          <p class="meta">Esporte</p>
+          <ul>
+            <li>Equipamentos modernos e ambiente climatizado.</li>
+            <li>Acompanhamento e orientações no local.</li>
+            <li>Funcionamento conforme grade e normas internas.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/img4.png" alt="Academia - musculação"></div>
+                <div class="carousel__slide"><img src="img/academia2.png" alt="Academia - equipamentos"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÁREA DE LUTAS -->
+    <section class="section bg-f2 theme-dark">
+      <div class="about about--reverse">
+        <div class="about__text">
+          <h2 class="h-section">Área de Lutas</h2>
+          <p class="meta">Esporte</p>
+          <ul>
+            <li>Espaço acolchoado e seguro para treinos.</li>
+            <li>Atividades conforme grade esportiva.</li>
+            <li>Instrutores especializados.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/luta1.png" alt="Área de lutas 1"></div>
+                <div class="carousel__slide"><img src="img/luta2.png" alt="Área de lutas 2"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BALNEÁRIO -->
+    <section class="section bg-f1">
+      <div class="about">
+        <div class="about__text">
+          <h2 class="h-section">Balneário</h2>
+          <p class="meta">Esporte &amp; Lazer</p>
+          <ul>
+            <li>Conjunto de piscinas externas para toda a família.</li>
+            <li>Atividades conforme grade e eventos.</li>
+            <li>Equipe de apoio e segurança.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel" data-autoplay="5000">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/balneario1.png" alt="Piscina externa 1"></div>
+                <div class="carousel__slide"><img src="img/balneario2.png" alt="Piscina externa 2"></div>
+                <div class="carousel__slide"><img src="img/balneario3.png" alt="Piscina externa 4"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PISCINA AQUECIDA -->
+    <section class="section bg-f2 theme-dark">
+      <div class="about about--reverse">
+        <div class="about__text">
+          <h2 class="h-section">Piscina Aquecida</h2>
+          <p class="meta">Bem-estar &amp; Lazer</p>
+          <ul>
+            <li>Água aquecida, conforto e acessibilidade.</li>
+            <li>Uso conforme grade e orientações técnicas.</li>
+            <li>Atividades como natação e hidroginástica.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/piscinaaquecida1.png" alt="Piscina aquecida 1"></div>
+                <div class="carousel__slide"><img src="img/piscinaaquecida2.png" alt="Piscina aquecida 2"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CAMPO -->
+    <section class="section bg-f1">
+      <div class="about">
+        <div class="about__text">
+          <h2 class="h-section">Campo</h2>
+          <p class="meta">Esporte</p>
+          <ul>
+            <li>Campo oficial para treinos e competições.</li>
+            <li>Reservas mediante secretaria esportiva.</li>
+            <li>Eventos conforme programação.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/campo1.png" alt="Campo de futebol 1"></div>
+                <div class="carousel__slide"><img src="img/campo2.png" alt="Campo de futebol 2"></div>
+                <div class="carousel__slide"><img src="img/campo3.png" alt="Campo de futebol 3"></div>
+                <div class="carousel__slide"><img src="img/campo4.png" alt="Campo de futebol 4"></div>
+                <div class="carousel__slide"><img src="img/campo5.png" alt="Campo de futebol 5"></div>
+                <div class="carousel__slide"><img src="img/campo6.png" alt="Campo de futebol 6"></div>
+                <div class="carousel__slide"><img src="img/campo7.png" alt="Campo de futebol 7"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAMPO SOCIETY -->
+    <section class="section bg-f2 theme-dark">
+      <div class="about about--reverse">
+        <div class="about__text">
+          <h2 class="h-section">Campo Society</h2>
+          <p class="meta">Esporte</p>
+          <ul>
+            <li>Campo sintético para partidas rápidas.</li>
+            <li>Reservas por aplicativo ou secretaria.</li>
+            <li>Atividades conforme grade esportiva.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/society1.png" alt="Campo society 1"></div>
+                <div class="carousel__slide"><img src="img/img7.png" alt="Campo society 2"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- GINÁSIO & QUADRAS -->
+    <section class="section bg-f1">
+      <div class="about">
+        <div class="about__text">
+          <h2 class="h-section">Ginásio &amp; Quadras</h2>
+          <p class="meta">Esporte</p>
+          <ul>
+            <li>Quadras de vôlei, basquete e tênis.</li>
+            <li>Ginásio poliesportivo para treinos e eventos.</li>
+            <li>Uso conforme grade esportiva.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/quadrapoli1.png" alt="Ginásio e quadras 1"></div>
+                <div class="carousel__slide"><img src="img/quadrapoli2.png" alt="Ginásio e quadras 2"></div>
+                <div class="carousel__slide"><img src="img/quadrapoli3.png" alt="Ginásio e quadras 3"></div>
+                <div class="carousel__slide"><img src="img/quadratenis.png" alt="Ginásio e quadras 4"></div>
+                <div class="carousel__slide"><img src="img/quadratenis2.png" alt="Ginásio e quadras 5"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIOSQUES -->
+    <section class="section bg-f2 theme-dark">
+      <div class="about about--reverse">
+        <div class="about__text">
+          <h2 class="h-section">Quiosques</h2>
+          <p class="meta">Convívio</p>
+          <ul>
+            <li>Ambientes equipados para churrascos e festas.</li>
+            <li>Reservas mediante disponibilidade.</li>
+            <li>Perfeitos para encontros familiares.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/quiosque1.png" alt="Quiosques 1"></div>
+                <div class="carousel__slide"><img src="img/quiosquered1.png" alt="Quiosques 2"></div>
+                <div class="carousel__slide"><img src="img/img5.png" alt="Quiosques 3"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PESQUEIRO -->
+    <section class="section bg-f1">
+      <div class="about">
+        <div class="about__text">
+          <h2 class="h-section">Pesqueiro</h2>
+          <p class="meta">Lazer</p>
+          <ul>
+            <li>Ambiente natural para pesca recreativa.</li>
+            <li>Regras específicas de preservação.</li>
+            <li>Momentos de lazer em contato com a natureza.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/pesqueiro1.png" alt="Pesqueiro 1"></div>
+                <div class="carousel__slide"><img src="img/pesqueiro2.png" alt="Pesqueiro 2"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PARQUE INFANTIL -->
+    <section class="section bg-f2 theme-dark">
+      <div class="about about--reverse">
+        <div class="about__text">
+          <h2 class="h-section">Parque Infantil</h2>
+          <p class="meta">Lazer</p>
+          <ul>
+            <li>Brinquedos seguros e apropriados.</li>
+            <li>Área exclusiva para crianças.</li>
+            <li>Uso acompanhado de responsáveis.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/pqinfantil1.png" alt="Parque infantil 1"></div>
+                <div class="carousel__slide"><img src="img/img9.png" alt="Parque infantil 2"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SALA DE DANÇA -->
+    <section class="section bg-f1">
+      <div class="about">
+        <div class="about__text">
+          <h2 class="h-section">Sala de Dança</h2>
+          <p class="meta">Bem-estar</p>
+          <ul>
+            <li>Ambiente com espelhos e piso adequado.</li>
+            <li>Aulas conforme grade esportiva.</li>
+            <li>Espaço para apresentações e treinos.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <div class="carousel">
+              <div class="carousel__track">
+                <div class="carousel__slide"><img src="img/saladanca.png" alt="Sala de dança 1"></div>
+                <div class="carousel__slide"><img src="img/saladanca2.png" alt="Sala de dança 2"></div>
+              </div>
+              <button class="carousel__btn prev"><i class="fa-solid fa-chevron-left"></i></button>
+              <button class="carousel__btn next"><i class="fa-solid fa-chevron-right"></i></button>
+              <div class="carousel__dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SAUNA -->
+    <section class="section bg-f2 theme-dark">
+      <div class="about about--reverse">
+        <div class="about__text">
+          <h2 class="h-section">Sauna</h2>
+          <p class="meta">Bem-estar</p>
+          <ul>
+            <li>Ambiente confortável e seguro.</li>
+            <li>Uso conforme normas e horários internos.</li>
+            <li>Perfeito para relaxamento.</li>
+          </ul>
+        </div>
+        <div class="about__media">
+          <div class="media-frame">
+            <img src="img/sauna1.png" alt="Sauna">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HORÁRIOS & NORMAS -->
+    <section class="section bg-f1">
+      <div class="container-narrow">
+        <div class="schedule-card">
+          <div class="schedule-head section--center">
+            <h2 class="h-section with-underline">Horários &amp; Normas</h2>
+            <p>Consulte regras de uso, horários de funcionamento e informações adicionais.</p>
+          </div>
+
+          <div class="schedule-controls">
+            <label for="sch-q">Buscar:</label>
+            <input id="sch-q" type="search" class="field" placeholder="Digite para buscar..." />
+            <div class="filter-chips">
+              <span class="chip filter is-active" data-filter="todos">Todos</span>
+              <span class="chip filter" data-filter="esporte">Esporte</span>
+              <span class="chip filter" data-filter="lazer">Lazer</span>
+              <span class="chip filter" data-filter="bemestar">Bem-estar</span>
+              <span class="chip filter" data-filter="convivio">Convívio</span>
+            </div>
+          </div>
+
+          <div class="schedule-list">
+            <!-- Lista dinâmica via estrutura.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-brand">© Clube de Campo de Tatuí</p>
+        <p class="footer-meta">R. Onze de Agosto, 3092 — Valinhos, Tatuí/SP • Horários: Terça a Sexta 6h–22h, Sáb/Dom 7h–22h</p>
+      </div>
+      <a class="crv-credit" href="https://crvsti.com.br" target="_blank" title="CRV Soluções em TI">
+        <img src="img/logo1_fundo_transparente.png" alt="CRV Soluções em TI">
+        <span>Desenvolvido por <b>CRV</b> Soluções em TI</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- BOTÃO VOLTAR AO TOPO -->
+  <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- JS -->
+  <script defer src="js/estrutura.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

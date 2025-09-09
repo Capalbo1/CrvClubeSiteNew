@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clube de Campo de Tatuí</title>
+
+  <!-- Fontes Google -->
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Sora:wght@600&display=swap" rel="stylesheet">
+
+  <!-- CSS principal -->
+  <link rel="stylesheet" href="css/main.css">
+
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo_clube_campo.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="container">
+      <a href="index.html" class="logo-wrap" title="Clube de Campo de Tatuí">
+        <img src="img/logo_clube_campo.png" alt="Clube de Campo de Tatuí" class="logo">
+        <span class="brand-name">Clube de Campo de Tatuí</span>
+      </a>
+
+      <nav class="primary-nav" aria-label="Navegação principal">
+        <ul>
+          <li><a href="index.html" class="is-active">Início</a></li>
+          <li><a href="estrutura.html">Estrutura</a></li>
+          <li><a href="institucional.html">Institucional</a></li>
+          <li><a href="index.html#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main class="container">
+    <!-- aqui vai o conteúdo da página -->
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-left">
+        <p class="footer-brand">© Clube de Campo de Tatuí</p>
+        <p class="footer-meta">
+          R. Onze de Agosto, 3092 — Valinhos, Tatuí/SP • Horários: Terça a Sexta 6h–22h, Sáb/Dom 7h–22h
+        </p>
+      </div>
+      <a class="crv-credit" href="https://crvsti.com.br" target="_blank" rel="noopener" title="CRV Soluções em TI">
+        <img src="img/logo1_fundo_transparente.png" alt="CRV Soluções em TI">
+        <span>Desenvolvido por <b>CRV</b> Soluções em TI</span>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Botão Voltar ao Topo -->
+  <button id="backToTop" class="back-to-top" type="button" aria-label="Voltar ao topo">
+    <i class="fa-solid fa-arrow-up" aria-hidden="true"></i>
+  </button>
+
+  <!-- Script do botão voltar ao topo -->
+  <script>
+    (() => {
+      const btn = document.getElementById('backToTop');
+      if (!btn) return;
+
+      const showAt = 400; // px de rolagem para exibir
+      const onScroll = () => {
+        (window.scrollY || document.documentElement.scrollTop) > showAt
+          ? btn.classList.add('is-visible')
+          : btn.classList.remove('is-visible');
+      };
+
+      window.addEventListener('scroll', onScroll, { passive: true });
+      onScroll();
+
+      btn.addEventListener('click', () => {
+        try {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        } catch (e) {
+          document.documentElement.scrollTop = 0;
+          document.body.scrollTop = 0;
+        }
+      });
+    })();
+  </script>
+
+  <!-- Aqui cada página vai carregar seu JS -->
+  <!-- Ex: <script defer src="js/inicio.js"></script> -->
+</body>
+</html>

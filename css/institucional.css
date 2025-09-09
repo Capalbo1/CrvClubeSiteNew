@@ -1,0 +1,320 @@
+/* ===== Escopo exclusivo da página Institucional ===== */
+.page-institucional{
+  --ease-smooth: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --dur-expand: 0.45s;
+  --dur-collapse: 0.42s;
+}
+
+/* Seções */
+.page-institucional .section{
+  padding-block: var(--section-py);
+  padding-inline: var(--section-px);
+}
+.page-institucional .container,
+.page-institucional .container-narrow{
+  max-width:1200px;
+  margin-inline:auto;
+  padding-inline:24px;
+}
+
+/* Full-bleed */
+.page-institucional .full-bleed{
+  inline-size:100vw;
+  margin-inline:calc(50% - 50vw);
+}
+
+/* ===== Fundos ===== */
+.page-institucional .bg-f1{
+  background:url("../img/fundo_bege.png") center/cover no-repeat;
+  color:#111;
+}
+.page-institucional .bg-f2{
+  background:url("../img/fundo_azul.png") center/cover no-repeat;
+  color:#fff;
+}
+.page-institucional .bg-f2 p,
+.page-institucional .bg-f2 .sub,
+.page-institucional .bg-f2 .h-section{ color:#fff; }
+
+/* ===== Títulos e subtítulos ===== */
+.page-institucional .head,
+.page-institucional .section--center{
+  text-align:center;
+}
+.page-institucional .h-section.with-underline{
+  color: inherit;
+  position: relative;
+  padding-bottom:.35rem;
+  margin:.75rem 0 1rem;
+}
+.page-institucional .h-section.with-underline::after{
+  content:"";
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:0;
+  width:72px;
+  height:3px;
+  background: currentColor;
+  border-radius:2px;
+}
+.page-institucional .sub{
+  opacity:.92;
+  margin-top:.25rem;
+  text-align:center;
+}
+
+/* ===== Texto ===== */
+.page-institucional p{
+  text-align: justify;
+  text-justify: inter-word;
+  hyphens: auto;
+  font-family: var(--ff-body);
+}
+
+/* ===== Palavra do Presidente ===== */
+.page-institucional .texto-colapsavel{ max-width:980px; margin:0 auto; }
+.page-institucional #presidente-texto{
+  overflow:hidden;
+  max-height: 200rem;
+  transition: max-height var(--dur-expand) var(--ease-smooth);
+}
+.page-institucional #presidente-texto.is-collapsed{
+  max-height: 15rem;
+  transition-duration: var(--dur-collapse);
+}
+.page-institucional .acoes{
+  margin-top:1rem;
+  display:flex;
+  justify-content:center;
+}
+
+/* ===== Cards ===== */
+.page-institucional .grid-cards{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.9rem;
+  justify-content:center;
+  list-style:none;
+  padding:0;
+  margin-top:1rem;
+}
+.page-institucional .card-person{
+  flex: 1 1 260px;
+  max-width: 340px;
+  padding:.95rem 1rem 1.05rem;
+  border-radius:14px;
+  border:1px solid currentColor;
+  background:transparent;
+  transition:
+    background .25s var(--ease-smooth),
+    box-shadow .28s var(--ease-smooth),
+    color .25s var(--ease-smooth),
+    border-color .25s var(--ease-smooth);
+}
+.page-institucional .card-person .name{
+  margin:0 0 .3rem;
+  font:700 1rem/1.35 var(--ff-heading);
+}
+.page-institucional .card-person .role{ margin:0; opacity:.96; }
+
+/* Hover */
+.page-institucional .bg-f1 .card-person{ border-color:rgba(26,75,140,.45); }
+.page-institucional .bg-f1 .card-person:is(:hover,:focus-visible){
+  background:rgba(26,75,140,.06);
+  color:#1a4b8c;
+  border-color:rgba(26,75,140,.85);
+  box-shadow: 0 0 0 3px rgba(26,75,140,.25), 0 8px 20px rgba(0,0,0,.12);
+}
+.page-institucional .bg-f2 .card-person{ border-color:rgba(242,234,221,.85); }
+.page-institucional .bg-f2 .card-person:is(:hover,:focus-visible){
+  background:rgba(242,234,221,.10);
+  color:#f2eadd;
+  border-color:rgba(242,234,221,1);
+  box-shadow: 0 0 0 3px rgba(242,234,221,.35), 0 8px 24px rgba(0,0,0,.28);
+}
+
+/* ===== Documentos ===== */
+.page-institucional .docs{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.6rem;
+  justify-content:center;
+}
+.page-institucional .btn-doc{
+  min-width:220px;
+  text-align:center;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+/* Fade in items */
+@keyframes fadeInUp {
+  from { opacity:0; transform: translateY(8px); }
+  to   { opacity:1; transform: translateY(0); }
+}
+.page-institucional .card-person.fade-in { animation: fadeInUp .32s var(--ease-smooth); }
+
+.page-institucional .is-hidden{ display:none !important; }
+
+/* ===================== */
+/* AJUSTES MOBILE - INSTITUCIONAL */
+/* ===================== */
+@media (max-width: 640px) {
+
+  /* Override do CSS global apenas para page-institucional */
+  body.page-institucional .container {
+    padding-left: 16px;
+    padding-right: 16px;
+    max-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+
+  /* Resetar regras globais que podem estar interferindo */
+  body.page-institucional .section {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  /* Garantir que full-bleed não interfira */
+  body.page-institucional .full-bleed .container {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  /* Centralizar títulos e subtítulos */
+  body.page-institucional h1,
+  body.page-institucional h2,
+  body.page-institucional h3,
+  body.page-institucional h4,
+  body.page-institucional .h-section {
+    text-align: center !important;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 8px;
+    width: auto;
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Header das seções */
+  body.page-institucional .head {
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0 8px;
+  }
+
+  body.page-institucional .sub {
+    text-align: center;
+    margin: 8px auto;
+    padding: 0 8px;
+  }
+
+  /* Texto da Palavra do Presidente */
+  body.page-institucional .texto-colapsavel {
+    padding: 0 8px;
+    text-align: justify;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body.page-institucional .colapsavel p {
+    margin-bottom: 16px;
+    line-height: 1.6;
+    text-align: justify;
+  }
+
+  /* Grid de cards - forçar layout em coluna */
+  body.page-institucional .grid-cards {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+    gap: 12px;
+    padding: 0 8px;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* Cards ocupam largura total */
+  body.page-institucional .card-person {
+    flex: none !important;
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+    padding: 16px;
+    text-align: center;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  body.page-institucional .card-person .name {
+    text-align: center;
+    margin-bottom: 8px;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  body.page-institucional .card-person .role {
+    text-align: center;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.3;
+  }
+
+  /* Botões de ação centralizados */
+  body.page-institucional .acoes {
+    display: flex;
+    justify-content: center;
+    margin: 24px auto;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body.page-institucional .btn {
+    min-width: 120px;
+    padding: 12px 20px;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+  }
+
+  /* Seção de documentos */
+  body.page-institucional .docs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    margin: 20px auto;
+    padding: 0 16px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  body.page-institucional .btn-doc {
+    width: 100%;
+    max-width: 280px;
+    margin: 0;
+    text-align: center;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    display: block;
+  }
+
+  /* Garantir espaçamento adequado das seções */
+  body.page-institucional .section {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  /* Remover limitação de altura em listas longas */
+  body.page-institucional #lista-diretoria,
+  body.page-institucional #lista-deliberativo {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+}
