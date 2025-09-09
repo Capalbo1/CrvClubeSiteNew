@@ -8,6 +8,7 @@
   <!-- CSS -->
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/inicio.css">
+  <link rel="stylesheet" href="css/chatbot.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="shortcut icon" href="img/logo_clube_campo.png" type="image/x-icon">
 </head>
@@ -284,11 +285,28 @@
       </a>
     </div>
   </footer>
+  <!-- BOTÃO DO CHATBOT -->
+<button class="chatbot-toggle" id="chatbotToggle">
+  <i class="fa-solid fa-comments"></i>
+</button>
+
+<!-- JANELA DO CHATBOT -->
+<div class="chatbot" id="chatbot">
+  <div class="chat-header">🤖 Clube de Campo</div>
+  <div class="chat-body" id="chat-body">
+    <div class="chat-message bot">Olá! Sou o assistente do Clube de Campo. Como posso ajudar?</div>
+  </div>
+  <div class="chat-footer">
+    <input type="text" id="user-input" placeholder="Digite sua pergunta...">
+    <button onclick="sendMessage()">Enviar</button>
+  </div>
+</div>
 <button id="backToTop" class="back-to-top" aria-label="Voltar ao topo">
   <i class="fa-solid fa-arrow-up"></i>
 </button>
   <!-- JS -->
   <script defer src="js/inicio.js"></script>
   <script src="js/main.js"></script>
+  <script src="js/chatbot.js"></script>
 </body>
 </html>
