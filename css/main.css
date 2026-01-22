@@ -461,6 +461,11 @@ input:focus, textarea:focus, select:focus{
   box-shadow: 0 14px 30px rgba(0,0,0,0.3);
 }
 
+/* AJUSTE DE EMPILHAMENTO – WHATSAPP + VOLTAR AO TOPO */
+.back-to-top {
+  bottom: 96px; /* sobe a seta acima do WhatsApp */
+}
+
 /* ===================== */
 /* ESTILOS MOBILE GERAIS */
 /* ===================== */
