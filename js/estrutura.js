@@ -69,35 +69,35 @@
     // ESPORTE
     {
       title: "Academia",
-      time: "Terça a Sexta: 6h às 22h • Sáb/Dom: 7h às 22h",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Equipamentos modernos, ambiente climatizado e orientações no local.",
       group: "esporte",
       tags: ["esporte", "musculacao", "bem-estar", "academia"]
     },
     {
       title: "Área de Lutas",
-      time: "Aulas/treinos conforme grade esportiva.",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Espaço apropriado e instrutores especializados.",
       group: "esporte",
       tags: ["esporte", "lutas", "judô", "karatê", "muay thai"]
     },
     {
       title: "Campo",
-      time: "Agenda por evento/competição.",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Reservas e informações na secretaria esportiva.",
       group: "esporte",
       tags: ["futebol", "campo", "esporte"]
     },
     {
       title: "Campo Society",
-      time: "Reservas por aplicativo/secretaria.",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Aulas/treinos conforme grade esportiva.",
       group: "esporte",
       tags: ["society", "futebol", "esporte"]
     },
     {
       title: "Ginásio & Quadras",
-      time: "Uso conforme grade esportiva.",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Estrutura para múltiplas modalidades.",
       group: "esporte",
       tags: ["vôlei", "basquete", "tênis", "poliesportiva", "esporte"]
@@ -105,14 +105,14 @@
     // LAZER
     {
       title: "Balneário (piscina externa)",
-      time: "Terça a Domingo: 10h às 18h",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Piscinas externas; atividades conforme grade de aulas e eventos.",
       group: "lazer",
       tags: ["lazer", "natação", "piscina", "hidroginástica"]
     },
     {
       title: "Pesqueiro",
-      time: "Consultar regras de pesca recreativa.",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Ambiente natural, preservação e segurança.",
       group: "lazer",
       tags: ["lazer", "pesca"]
@@ -127,21 +127,21 @@
     // BEM-ESTAR
     {
       title: "Piscina Aquecida",
-      time: "Consultar grade de aulas e orientações técnicas.",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Conforto térmico para natação e hidroginástica.",
       group: "bemestar",
       tags: ["bem-estar", "lazer", "piscina", "natação"]
     },
     {
       title: "Sala de Dança",
-      time: "Aulas conforme grade.",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Espaço com piso adequado e espelhos.",
       group: "bemestar",
       tags: ["bem-estar", "dança", "aulas"]
     },
     {
       title: "Sauna",
-      time: "Uso conforme normas e horários internos.",
+      time: "Horário: consultar no Instagram oficial ou Secretaria",
       note: "Ambiente confortável para relaxamento.",
       group: "bemestar",
       tags: ["bem-estar", "relaxamento", "sauna"]
