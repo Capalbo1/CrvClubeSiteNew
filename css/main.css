@@ -604,3 +604,13 @@ input:focus, textarea:focus, select:focus{
   }
 }
 
+  /* AJUSTE MOBILE – WHATSAPP + VOLTAR AO TOPO */
+  .whatsapp-float {
+    bottom: 20px;   /* fica mais embaixo */
+    right: 20px;
+  }
+
+  .back-to-top {
+    bottom: 90px;   /* sobe a seta acima do WhatsApp */
+    right: 20px;
+  }
