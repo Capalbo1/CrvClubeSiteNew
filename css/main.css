@@ -84,23 +84,33 @@ section > *:first-child { margin-top: 0; }
   box-shadow: 0 8px 22px rgba(0,0,0,.06);
 }
 
-.site-header .container {
-  max-width: 1320px; /* largura máxima fixa */
-  margin: 0 auto;    /* centralizado */
-  padding-left: 40px;
-  padding-right: 40px;
-  padding-block: 12px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 20px;
+.site-header .container{
+  width:min(1320px,96vw);
+
+  margin-inline:auto;
+
+  padding-inline:28px;
+
+  min-height:88px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  gap:24px;
+
+  box-sizing:border-box;
 }
 
 .logo-wrap{ display:flex; align-items:center; gap:10px; min-height:52px; }
-.logo-wrap .logo{ height:60px; width:auto; display:block; }
+.logo-wrap .logo{ height:100px; width:auto; display:block; }
 @media (max-width: 980px){
   .logo-wrap{ min-height:44px; }
-  .logo-wrap .logo{ height:38px; }
+  .logo-text{
+  height:120px;
+}
 }
 
 .brand-name{
@@ -428,22 +438,37 @@ input:focus, textarea:focus, select:focus{
   from {opacity: 0; transform: translateY(-6px);}
   to {opacity: 1; transform: translateY(0);}
 }
-.logo-wrap {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  text-decoration: none;
+
+.logo-wrap{
+  display:flex;
+
+  align-items:center;
+
+  justify-content:flex-start;
+
+  width:320px;
+
+  min-width:320px;
+
+  height:92px;
+
+  text-decoration:none;
+
+  flex-shrink:0;
 }
 
-.logo {
-  height: 60px;
-  width: auto;
-}
+.logo-text{
+  height:92px;
 
-.logo-text {
-  height: 40px;
-  width: auto;
-  display: block;
+  width:auto;
+
+  transform:scaleX(1.08);
+
+  transform-origin:left center;
+
+  display:block;
+
+  transition:all .3s ease;
 }
 
 /* BOTÃO FLUTUANTE WHATSAPP */
