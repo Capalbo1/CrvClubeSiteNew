@@ -1,14 +1,14 @@
 /* =========================================================
    FONTES GLOBAIS
    ========================================================= */
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Sora:wght@600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700&family=Rajdhani:wght@500;600;700&display=swap');
 
 /* =========================================================
    TOKENS / CORES / TIPOGRAFIA (globais)
    ========================================================= */
 :root{
   /* Tipografia global */
-  --ff-heading:'Sora',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
+  --ff-heading:'Rajdhani',ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
   --ff-body:'Manrope',system-ui,-apple-system,"Segoe UI",Roboto,Arial,sans-serif;
 
   /* Acentos (com fallback) */
