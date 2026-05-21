@@ -10,7 +10,8 @@
   padding-block: var(--section-py);
   padding-inline: var(--section-px);
 }
-.page-institucional .container,
+
+.page-institucional main .container,
 .page-institucional .container-narrow{
   max-width:1200px;
   margin-inline:auto;

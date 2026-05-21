@@ -247,4 +247,29 @@ document.addEventListener('DOMContentLoaded', () => {
       panel.scrollLeft = scrollLeft - walk;
     });
   }
+
+    /* ===== Reveal Animations ===== */
+
+  const revealObserver = new IntersectionObserver((entries) => {
+
+    entries.forEach(entry => {
+
+      if(entry.isIntersecting){
+        entry.target.classList.add('is-visible');
+      }
+
+    });
+
+  }, {
+    threshold: 0.12
+  });
+
+  document.querySelectorAll(
+    '.reveal, .media-frame, .feature, .phone-wrap, .contact-card, .map-card'
+  ).forEach(el => {
+
+    revealObserver.observe(el);
+
+  });
+
 });

@@ -397,27 +397,141 @@ h3 { font-size: var(--fs-h3); }
 .features-carousel:hover .features-track { animation-play-state: paused; }
 @keyframes marquee { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
 
-.feature {
-  position: relative; display: grid; place-items: center; text-align: center;
-  text-decoration: none; color: inherit; min-width: 240px;
-  padding: clamp(16px, 2vw, 22px); background: rgba(255, 255, 255, .94);
-  border-radius: 18px; border: 1px solid rgba(120, 150, 170, .22);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, .10); overflow: hidden;
-  transition: transform .28s ease, box-shadow .28s ease, background .28s ease;
+#destaques .feature{
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  text-decoration: none;
+
+  color: inherit;
+
+  width: 260px;
+
+  min-width: 260px;
+
+  min-height: 250px;
+
+  padding: 24px 20px;
+
+  background: rgba(255, 255, 255, .94);
+
+  border-radius: 18px;
+
+  border: 1px solid rgba(120, 150, 170, .22);
+
+  box-shadow: 0 6px 20px rgba(0, 0, 0, .10);
+
+  overflow: hidden;
+
+  box-sizing: border-box;
+
+  transition:
+    transform .28s ease,
+    box-shadow .28s ease,
+    background .28s ease;
 }
-.feature > * { position: relative; z-index: 2; }
-.feature i    { color: var(--c-accent); font-size: clamp(26px, 3.2vw, 34px); margin-bottom: 8px; transition: color .28s ease; }
-.feature h3   { margin: 2px 0 4px; color: #111; transition: color .28s ease; }
-.feature p    { margin: 0; color: #444; font-size: .95rem; transition: color .28s ease; }
-.feature::before {
-  content: ""; position: absolute; inset: 0; border-radius: inherit; z-index: 1;
+
+#destaques .feature > *{
+  position: relative;
+
+  z-index: 2;
+}
+
+#destaques .feature i{
+  color: var(--c-accent);
+
+  font-size: clamp(26px, 3.2vw, 34px);
+
+  margin-bottom: 10px;
+
+  transition: color .28s ease;
+}
+
+#destaques .feature h3{
+  width: 100%;
+
+  margin: 0 0 8px;
+
+  color: #111;
+
+  text-align: center;
+
+  transition: color .28s ease;
+}
+
+#destaques .feature p{
+  width: 100%;
+
+  margin: 0;
+
+  color: #444;
+
+  font-size: .95rem;
+
+  line-height: 1.6;
+
+  text-align: center;
+
+  transition: color .28s ease;
+}
+
+#destaques .feature::before{
+  content: "";
+
+  position: absolute;
+
+  inset: 0;
+
+  border-radius: inherit;
+
+  z-index: 1;
+
   background: var(--thumb) center / cover no-repeat;
-  opacity: 0; transform: scale(1.04); transition: opacity .38s ease, transform .38s ease;
+
+  opacity: 0;
+
+  transform: scale(1.04);
+
+  transition:
+    opacity .38s ease,
+    transform .38s ease;
 }
-.feature:hover { transform: translateY(-7px) scale(1.02); box-shadow: 0 16px 36px rgba(0, 0, 0, .20); }
-.feature:hover::before { opacity: .96; transform: scale(1.07); }
-.feature:hover h3, .feature:hover p { color: #fff; text-shadow: 0 1px 10px rgba(0, 0, 0, .45); }
-.feature:hover i { color: #fff; }
+
+#destaques .feature:hover{
+  transform:
+    translateY(-7px)
+    scale(1.02);
+
+  box-shadow:
+    0 16px 36px rgba(0, 0, 0, .20);
+}
+
+#destaques .feature:hover::before{
+  opacity: .96;
+
+  transform: scale(1.07);
+}
+
+#destaques .feature:hover h3,
+#destaques .feature:hover p{
+  color: #fff;
+
+  text-shadow:
+    0 1px 10px rgba(0, 0, 0, .45);
+}
+
+#destaques .feature:hover i{
+  color: #fff;
+}
 
 /* =========================================================
    CONTATO
@@ -563,6 +677,187 @@ h3 { font-size: var(--fs-h3); }
 .site-footer .footer-inner > * { flex: 0 0 auto; min-width: 0; }
 @media (max-width: 720px) { .site-footer .footer-inner { flex-wrap: wrap; flex-direction: column; align-items: flex-start; } }
 .site-header .container, .site-footer .footer-inner { width: auto; box-sizing: border-box; }
+
+/* =========================================================
+   NOVOS TÍTULOS CENTRALIZADOS + ORNAMENTOS
+   ========================================================= */
+.section-heading{
+  position: relative;
+
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  text-align: center;
+
+  gap: 10px;
+
+  margin-bottom: clamp(34px, 5vw, 60px);
+
+  z-index: 2;
+}
+
+.section-heading h2{
+  position: relative;
+
+  z-index: 2;
+
+  margin: 0;
+
+  font-family: var(--ff-heading);
+
+  font-size: clamp(24px, 3vw, 42px);
+
+  font-weight: 700;
+
+  letter-spacing: .05em;
+
+  text-transform: uppercase;
+
+  line-height: 1.05;
+}
+
+.section-heading--bege h2{
+  color: #111;
+}
+
+.section-heading--blue h2{
+  color: #fff;
+}
+
+.section-ornament{
+  position: relative;
+
+  z-index: 1;
+
+  width: clamp(170px, 14vw, 240px);
+
+  opacity: 1;
+
+  pointer-events: none;
+
+  user-select: none;
+}
+
+/* =========================================================
+   INTRO CENTRALIZADA
+   ========================================================= */
+
+.section-heading + .section-intro{
+  max-width: 74ch;
+
+  margin:
+    -8px auto
+    42px;
+
+  text-align: center;
+
+  line-height: 1.8;
+}
+
+/* =========================================================
+   ANIMAÇÕES GERAIS
+   ========================================================= */
+
+.reveal{
+  opacity: 0;
+
+  transform:
+    translateY(42px);
+
+  transition:
+    opacity .9s ease,
+    transform .9s cubic-bezier(.22,.61,.36,1);
+}
+
+.reveal.is-visible{
+  opacity: 1;
+
+  transform:
+    translateY(0);
+}
+
+/* =========================================================
+   ANIMAÇÕES DAS FOTOS / CARDS
+   ========================================================= */
+
+.media-frame,
+.feature,
+.phone-wrap,
+.contact-card,
+.map-card{
+  opacity: 0;
+
+  transform:
+    translateY(46px);
+
+  transition:
+    opacity 1s ease,
+    transform 1s cubic-bezier(.22,.61,.36,1);
+}
+
+.media-frame.is-visible,
+.feature.is-visible,
+.phone-wrap.is-visible,
+.contact-card.is-visible,
+.map-card.is-visible{
+  opacity: 1;
+
+  transform:
+    translateY(0);
+}
+
+/* =========================================================
+   HOVER MAIS PREMIUM NOS CARDS
+   ========================================================= */
+
+.media-frame{
+  transition:
+    transform .45s ease,
+    box-shadow .45s ease,
+    opacity 1s ease;
+}
+
+.media-frame:hover{
+  transform:
+    translateY(-4px)
+    scale(1.01);
+
+  box-shadow:
+    0 24px 58px rgba(0,0,0,.22);
+}
+
+/* =========================================================
+   AJUSTE TÍTULOS ANTIGOS
+   ========================================================= */
+
+#breve-historia .h-section,
+#hoje .h-section,
+#destaques .h-section,
+#contato .h-section{
+  display: none;
+}
+
+/* =========================================================
+   SUBTÍTULOS CENTRALIZADOS
+   ========================================================= */
+
+#destaques .section-intro,
+#contato .section-intro{
+  text-align: center;
+
+  max-width: 900px;
+
+  margin-left: auto;
+
+  margin-right: auto;
+
+  margin-bottom: 34px;
+}
 
 /* =========================================================
    RESPONSIVO MOBILE
